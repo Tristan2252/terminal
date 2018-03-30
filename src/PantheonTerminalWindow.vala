@@ -195,7 +195,7 @@ namespace PantheonTerminal {
             header.set_show_close_button (true);
             header.get_style_context ().add_class ("default-decoration");
 
-            this.set_titlebar (header);
+            // this.set_titlebar (header);
 
             search_button = new Gtk.ToggleButton ();
             var img = new Gtk.Image.from_icon_name ("edit-find-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
