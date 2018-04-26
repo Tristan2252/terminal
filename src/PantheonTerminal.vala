@@ -106,13 +106,15 @@ namespace PantheonTerminal {
                                 if (terminal != window.current_terminal) {
                                     terminal.tab.icon = new ThemedIcon ("process-completed-symbolic");
                                 }
-
+				
+				/*** disable notifications because i3 gaps bug maybe
                                 if ((window.get_window ().get_state () & Gdk.WindowState.FOCUSED) == 0) {
                                     var notification = new Notification (_("Task finished"));
                                     notification.set_body (process);
                                     notification.set_icon (new ThemedIcon ("utilities-terminal"));
                                     send_notification ("finished", notification);
                                 }
+				***/
                             }
 
                         }
